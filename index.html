@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title-pane">
+            <div>MY LIBRARY</div>
+        </div>
+        <div class="command-pane">
+            <button type="button" id="add-book-button">Add Book</button>
+        </div>
+        <div class="display-pane">
+            <div class="hidden-tile">
+                <div class="book-tile" id="reference-tile">
+                    <div class="book-title">
+                        <span>BOOK TITLE</span>
+                    </div>
+                    <div class="book-details-container">
+                        <ul>
+                            <li id="author-name-text">Author: George</li>
+                            <li id="book-pages-text">Pages: 255</li>
+                            <li id="has-read-text">Read: Yes</li>
+                        </ul>
+                    </div>
+                    <div class="tile-buttons">
+                        <div class="mark-read-button-container">
+                            <button type="button" id="mark-read-button">Mark Read</button>
+                        </div>
+                        <div class="mark-delete-button-container">
+                            <button type="button" id="mark-delete-button">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <dialog id="add-book-dialog">     
+        <form action="">
+            <div class="form-container">
+                <div class="form-heading">
+                    <span>Add Book</span>
+                    <button type="button" id="form-close-button">X</button>
+                </div>
+                <div class="form-input-container">
+                    <label for="book-name">Book Name</label>
+                    <input type="text" name="book-name" id="book-name" class="form-text-input">
+                </div>
+                <div class="form-input-container">
+                    <label for="book-author">Book Author</label>
+                    <input type="text" name="book-author" id="book-author" class="form-text-input">
+                </div>
+                <div class="form-input-container">
+                    <label for="book-pages">Book Pages</label>
+                    <input type="number" name="book-pages" id="book-pages" class="form-text-input">
+                </div>
+                <div class="form-input-container">
+                    <label for="book-has-read">Has Read?</label>
+                    <input type="checkbox" name="book-has-read" id="book-has-read" class="book-check-input">
+                </div>
+
+                <button type="button" id="form-submit-button">Add</button>
+            </div>
+        </form>
+    </dialog>
+</body>
+</html>
